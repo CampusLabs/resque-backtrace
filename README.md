@@ -1,7 +1,7 @@
 # resque-backtrace
 
 A simple gem to solve a simple problem: when an exception occurs
-during a [Resque][] job, no backtrace is visibly logged.  In
+during a [Resque][1] job, no backtrace is visibly logged.  In
 production you probably want to use an exception catching service, but
 in development you might just want to see the backtrace and fix the
 issue.
