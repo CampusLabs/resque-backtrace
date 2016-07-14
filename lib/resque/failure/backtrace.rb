@@ -9,6 +9,7 @@ module Resque
       private
 
       def filter_backtrace(backtrace)
+        return if backtrace.nil?
         index = backtrace.index { |item| item.include?('/lib/resque/job.rb') }
         backtrace.first(index.to_i)
       end
