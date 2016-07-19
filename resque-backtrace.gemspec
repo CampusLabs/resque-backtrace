@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "resque-backtrace"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Cameron Desautels"]
   spec.email         = ["camdez@gmail.com"]
   spec.description   = "Log backtraces from exceptions in Resque jobs"
