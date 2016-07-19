@@ -2,7 +2,7 @@ module Resque
   module Failure
     class Backtrace < Base
       def save
-        bt = filter_backtrace(exception.backtrace)
+        bt = filter_backtrace(exception.backtrace || [])
         worker.log bt.join("\n")
       end
 
